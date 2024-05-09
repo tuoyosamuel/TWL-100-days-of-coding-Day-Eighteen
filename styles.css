@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: Times;
+}
+
+:root{
+    --green: #7DB039;
+    --white: rgb(255, 255, 255);
+    --bgdark: #333;
+}
+
+span{
+    color: var(--green);
+}
+ul{
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    background-color: var(--white);
+}
+
+#DesktopNav ul{
+    display: flex;
+    margin-top: 20px;
+}
+
+#mobileNav{
+      display: flex;
+   margin-top: 5px;
+    font-size: 30px;
+}
+
+#DesktopNav li{
+    margin-right: 20px;
+}
+
+.nav-btn{
+    border: none;
+    background-color: var(--green);
+    color: white;
+    padding: 10px 20px;
+}
+
+#hero{
+    background-image: url('img/banner-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+#hero .content{
+   position: absolute;
+   left: 0;
+   line-height: 1.5;
+   padding: 20px;
+}
+
+#hero .content h1{
+    font-size: 70px;
+}
+
+#hero .content .btn1{
+    border: none;
+    background-color: var(--green);
+    color: white;
+    padding: 20px 30px;
+}
+
+#hero .content .btn2{
+    border: 2px solid white;
+    color: white;
+    padding: 17px 30px;
+    background: transparent;
+}
+
+#hero .content button{
+    margin: 20px 5px;
+}
+
+.bg-dark{
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    color: white; 
+}
+
+
+.bg-dark .Check{
+    border: none;
+    background-color: var(--green);
+    color: white;
+    padding: 5px 10px;
+}
+
+#booking{
+    background-color: var(--white);
+    height: 100vh;
+}
+
+#booking .content{
+    line-height: 1.5;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.about-btn{
+    border: none;
+    background-color: var(--green);
+    color: white;
+    padding: 20px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.flex h1{
+    opacity: 0.1;
+    font-size: 70px;
+    position: absolute;
+    top: -1;
+}
+
+.bg-dark2{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+.bg-dark2 span{
+    color: white;
+}
+
+#rooms{
+    height: 100vh;
+    width: 100%;
+    color: black;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+#rooms h2{
+    font-size: 40px;
+}
+
+
+.room{
+    margin-left: 30px;
+}
+
+.card i{
+    color: gold;
+}
+
+#cards .card{
+    width: 320px;
+    border: 1px solid whitesmoke;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px lightgray;
+}
+
+#services{
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+   
+}
+
+.gallery{
+    display: flex;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
+#services .gallery img{
+    width: 600px;
+  
+}
+
+#services h1{
+    opacity: 0.1;
+    font-size: 70px;
+}
+
+.services-box .box{
+    border: 1px solid gray;
+    width: 150px;
+    padding: 40px 0;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 5px 20px 0;    
+}
+.services-box i{
+    color: var(--green);
+    font-size: 30px;
+}
+
+footer {
+  background: #282834;
+  color: #b6b7b9;
+  padding: 20px;
+}
+
+footer .grid {
+  grid-template-columns: 6fr 3fr 3fr;
+}
+
+footer p {
+  color: #b6b7b9;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+footer .icon i {
+  margin: 20px 20px 20px 0;
+  color: #b6b7b9;
+}
+
+footer h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+footer li {
+  margin-bottom: 20px;
+}
+
+footer i {
+  color: #7fc142;
+  margin: 20px 0;
+  margin-right: 20px;
+}
+
+footer label {
+  margin: 20px 0;
+}
+
+.legal {
+  padding: 15px 0;
+  background: #282834;
+  color: #b6b7b9;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive styles*/
+@media(max-width: 768px){
+#DesktopNav{display: none;}
+.right img{width: 100%;}
+.flex{padding: 20px;}
+input{ padding: 20px;}
+.bg-dark .Check{ padding: 20px;}
+.flex{ display: block;}
+#rooms{margin-top: 150px;}
+#services .text{margin-top: 1200px;} 
+.room{ margin-top: 150px; margin-bottom: 50px;}
+.gallery{
+   display: flex;
+    max-width: 100%;
+    overflow-x: scroll;}
+    footer{
+        margin-top: 2000px;
+    }
+   }
+
+
+
+@media(min-width: 768px){
+
+ #hero .content h1{
+    font-size: 70px;
+}
+.bg-dark2 .box{
+    margin-right: 100px;
+}
+.bg-dark{
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+}
+
+#mobileNav{
+    display: none;
+}
+
+#rooms #cards{
+   display: flex;
+    justify-content: center;
+}
+.services-box .box{
+  margin: 20px 70px 20px 20px;
+ } 
+ 
+ .right{
+     display: none;
+ }
+ 
+ }
