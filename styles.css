@@ -11,6 +11,9 @@
     --bgdark: #333;
 }
 
+html, body{
+    width: 100%;
+}
 span{
     color: var(--green);
 }
@@ -73,7 +76,7 @@ header{
 }
 
 #hero .content h1{
-    font-size: 70px;
+    font-size: 50px;
 }
 
 #hero .content .btn1{
@@ -135,7 +138,7 @@ header{
 
 .flex h1{
     opacity: 0.1;
-    font-size: 70px;
+    font-size: 50px;
     position: absolute;
     top: -1;
 }
@@ -178,7 +181,7 @@ header{
 }
 
 #cards .card{
-    width: 320px;
+    width: 300px;
     border: 1px solid whitesmoke;
     margin-bottom: 20px;
     padding: 10px;
@@ -196,7 +199,7 @@ header{
     display: flex;
     max-width: 100%;
     overflow-x: scroll;
-}
+} 
 
 #services .gallery img{
     width: 600px;
@@ -269,7 +272,7 @@ footer label {
 }
 
 /* Responsive styles*/
-@media(max-width: 768px){
+@media(max-width: 800px){
 #DesktopNav{display: none;}
 .right img{width: 100%;}
 .flex{padding: 20px;}
@@ -290,7 +293,7 @@ input{ padding: 20px;}
 
 
 
-@media(min-width: 768px){
+@media(min-width: 800px){
 
  #hero .content h1{
     font-size: 70px;
@@ -319,7 +322,7 @@ input{ padding: 20px;}
   margin: 20px 70px 20px 20px;
  } 
  
- .right{
+ .right-none{
      display: none;
  }
  
